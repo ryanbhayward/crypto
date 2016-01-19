@@ -1,4 +1,6 @@
-# use keyphrase to generate alphabet substitution
+# usage: python keyphrase.py [-a] < infile
+#   where infile first line: alphabet
+#         infile 2nd line:   keyphrase
 #            : after phrase, cycle thru alph from last phrase char
 #     -a     : "     "     , "     "    "    "    start of alph
 
