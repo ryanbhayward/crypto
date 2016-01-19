@@ -1,5 +1,5 @@
-# demo kasiki method for cracking Vigenere cipher
-# usage: python kasiki < ciphertext
+# demo friedman method for cracking Vigenere cipher
+# usage: python friedman < ciphertext
 from sys import stdin
 from collections import Counter
 from string import ascii_lowercase # ab ... z
