@@ -24,10 +24,18 @@ def newlinecheck(X,y):
     X[0] += 1
 
 threshold, ItemsThisLine, itemsPerLine = 1, [0], 5
+#for u in sorted(Unigrams, key=Unigrams.get, reverse=True):
+  #if Unigrams[u]>= threshold: 
+    #print u, '%3d' % Unigrams[u], '  ',
+    #newlinecheck(ItemsThisLine, itemsPerLine)
 for u in sorted(Unigrams, key=Unigrams.get, reverse=True):
   if Unigrams[u]>= threshold: 
-    print u, '%3d' % Unigrams[u], '  ',
-    newlinecheck(ItemsThisLine, itemsPerLine)
+    print u, 
+print ''
+for u in sorted(Unigrams, key=Unigrams.get, reverse=True):
+  if Unigrams[u]>= threshold: 
+    print '%2d' % Unigrams[u], 
+print ''
 
 Digrams = {}
 for j in range(len(Instring)-1):

@@ -1,5 +1,5 @@
 # usage: python keyphrase.py [-a] < infile
-#   where infile first line: alphabet
+#   where infile first line: alphabet, e.g. abcdefghijklmnopqrstuvwxyz
 #         infile 2nd line:   keyphrase
 #            : after phrase, cycle thru alph from last phrase char
 #     -a     : "     "     , "     "    "    "    start of alph

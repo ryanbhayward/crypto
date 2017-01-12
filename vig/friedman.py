@@ -84,6 +84,7 @@ def findkeylength(Input, maxlength):
 
 b = findkeylength(Input,10)
 print b
+b = 8
 
 S = vigStrings(Input,b)
 bestkey = ''
