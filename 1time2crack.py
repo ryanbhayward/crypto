@@ -33,10 +33,3 @@ for j in range(2):
   key =  alphaOp(L[j],'-',L[2])
   print indent + key
   print indent + alphaOp(L[1-j],'-',key)
-
-#for k in range(len(L)):
-  #for j in range(len(L[k])):
-    #if L[k][j] != ' ':
-      #print chr(ord('a') + (ord(L[0][j]) - ord(L[k][j]))%26),
-  #print ''
-
