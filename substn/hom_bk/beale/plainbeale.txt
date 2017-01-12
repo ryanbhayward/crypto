@@ -1,0 +1,1 @@
+a book cipher is a cipher in which the key is some aspect of a book or other piece of text; books being common and widely available in modern times, users of book ciphers take the position that the details of the key are sufficiently well hidden from attackers in practice.
