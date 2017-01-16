@@ -48,5 +48,19 @@ for j in range(len(Instring)-1):
 threshold, ItemsThisLine, itemsPerLine = 2, [0], 5
 for d in sorted(Digrams, key=Digrams.get, reverse=True):
   if Digrams[d]>=threshold: 
-    print d, '%3d' % Digrams[d], '   ',
+    print d, Digrams[d], '   ',
     newlinecheck(ItemsThisLine, itemsPerLine)
+
+alph = 'abcdefghijklmnopqrstuvwxyz'
+print '\n\n ',
+for c in alph:
+  print '  ' + c,
+print ''
+for c in alph:
+  print c,
+  for d in alph:
+    if c+d in Digrams:
+      print '%3d' % Digrams[c+d],
+    else:
+      print '%3d' % 0,
+  print ''
