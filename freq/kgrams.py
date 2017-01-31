@@ -1,19 +1,21 @@
-# return offsets of repeated k-grams
-# k is subtring length
+# in given text, check for repeated k-grams
 
 from string import letters, punctuation
 from sys import stdin
 
-ptxt = ''
+txt = ''
 for line in stdin:
   for c in line:
     if c in letters:
-      ptxt += c
+      txt += c
 
-ssl = 3 # substring length
+def kgrams(txt, kgram_length):
+  print 'check for repeated', kgram_length, '-grams'
+  for j in range(len(txt)-(kgram_length-1)):
+    kgram = txt[j:j+kgram_length]
+    for k in range(j+kgram_length, len(txt)-(kgram_length-1)):
+      if kgram == txt[k:k+kgram_length]:
+        print k-j, kgram
 
-for k in range(len(ptxt)-(ssl-1)):
-  kgram = ptxt[k:k+ssl]
-  for j in range(k+ssl, len(ptxt)-(ssl-1)):
-    if kgram == ptxt[j:j+ssl]:
-      print k, j, j-k, kgram
+for t in range(2,4):
+  kgrams(txt, t)
