@@ -4,7 +4,7 @@ from sys import stdin
 from collections import Counter
 from string import ascii_lowercase # ab ... z
 
-englishFreq = (.081, .001, .027, .042, .127, .022, .020, .061, .070, .002, .008, .040, .024, .067, .075, .019, .001, .060, .063, .091, .028, .010, .024, .002, .020, .001)
+englishFreq = (.082, .015, .028, .043, .127, .022, .020, .061, .070, .002, .008, .040, .024, .067, .075, .019, .001, .060, .063, .091, .028, .010, .024, .002, .020, .001)
 
 def vigStrings(L,k): # split L text into k substrings
   strings = []
